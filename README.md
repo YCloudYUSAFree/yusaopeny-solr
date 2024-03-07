@@ -7,7 +7,7 @@
 
 ## Portainer settings
 
-url to paste `https://github.com/YCloudYUSAFree/yusaopeny-solr#8.x`
+url to paste `https://github.com/YCloudYUSAFree/yusaopeny-solr.git#8.x`
 image name: `yusa-solr:8.x`
 
 ![build settings](/img/image-build.png)
