@@ -2,9 +2,7 @@ version: '3.7'
 services:
   solr:
     container_name: ${SITE_ID}
-    build: 
-      context: .
-      dockerfile: Dockerfile
+    image: yusaopeny-solr:8.x
     restart: always
     volumes:
       - data:/var/solr
