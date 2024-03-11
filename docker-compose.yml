@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  solr:
+    container_name: ${SITE_ID}
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - data:/var/solr
+    labels:
+      caddy: ${SITE_ID}.solr.ws.y.org
+      caddy.reverse_proxy: "{{upstreams 8983}}"
+      caddy.basicauth.solr: ${BASIC_AUTH}
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+
+volumes:
+  data:
