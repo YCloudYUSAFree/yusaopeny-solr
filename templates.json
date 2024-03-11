@@ -1,27 +1,32 @@
-[
-    {
-        "type": 3,
-        "title": "YUSA Solr 8.x",
-        "description": "Provide solr 8 for YUSA OpenY sites",
-        "note": "",
-        "categories": ["search-engine"],
-        "platform": "linux",
-        "logo": "https://solr.apache.org/theme/images/favicon.ico",
-        "repository": {
-          "url": "https://github.com/YCloudYUSAFree/yusaopeny-solr.git",
-          "stackfile": "docker-compose.yml"
-        },
-        "env": [
-          {
-            "name": "SITE_ID",
-            "label": "YUSA Site ID",
-            "description": "Site ID, like prelive-4548-openy-ymcagreensboro. Ensure that site id have prefix with instance environment like live, prelive, staging"
-          },
-          {
-            "name": "BASIC_AUTH",
-            "label": "Basic Auth",
-            "description": "replace symbol $ by double symbol $$ for escape when insert new password. To generate hash for password run locally: docker run --rm -it caddy caddy hash-password.\n Example $$2a$$14$$fpPuWjlHDI5MlTj7LGL3FOkha6SAem3EbBoF6B90801fOjxu25wXO"
-          }
-        ]
-      }
-]
+{
+    "version": "2",
+    "templates": [
+        {
+            "type": 3,
+            "title": "YUSA Solr 8.x",
+            "description": "Provide solr 8 for YUSA OpenY sites",
+            "note": "",
+            "categories": [
+                "search-engine"
+            ],
+            "platform": "linux",
+            "logo": "https://solr.apache.org/theme/images/favicon.ico",
+            "repository": {
+                "url": "https://github.com/YCloudYUSAFree/yusaopeny-solr.git",
+                "stackfile": "docker-compose.yml"
+            },
+            "env": [
+                {
+                    "name": "SITE_ID",
+                    "label": "YUSA Site ID",
+                    "description": "Site ID, like prelive-4548-openy-ymcagreensboro. Ensure that site id have prefix with instance environment like live, prelive, staging"
+                },
+                {
+                    "name": "BASIC_AUTH",
+                    "label": "Basic Auth",
+                    "description": "replace symbol $ by double symbol $$ for escape when insert new password. To generate hash for password run locally: docker run --rm -it caddy caddy hash-password.\n Example $$2a$$14$$fpPuWjlHDI5MlTj7LGL3FOkha6SAem3EbBoF6B90801fOjxu25wXO"
+                }
+            ]
+        }
+    ]
+}
