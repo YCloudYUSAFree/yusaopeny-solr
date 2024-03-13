@@ -18,8 +18,8 @@
             "env": [
                 {
                     "name": "BASIC_AUTH",
-                    "label": "Basic Auth",
-                    "description": "replace symbol $ by double symbol $$ for escape when insert new password. To generate hash for password run locally: docker run --rm -it caddy caddy hash-password.\n Example $$2a$$14$$fpPuWjlHDI5MlTj7LGL3FOkha6SAem3EbBoF6B90801fOjxu25wXO"
+                    "label": "Basic Auth Hashed Password",
+                    "description": "Note: replace symbol $ by the double symbol $$ for escape when inserting new password. To generate hash for password run locally: docker run --rm -it caddy caddy hash-password.\n Example $$2a$$14$$fpPuWjlHDI5MlTj7LGL3FOkha6SAem3EbBoF6B90801fOjxu25wXO"
                 }
             ]
         }
